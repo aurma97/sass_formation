@@ -1,0 +1,125 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select, textarea {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+td:not([align]), th:not([align]) {
+  text-align: left;
+}
+
+body {
+  padding: 30px;
+  background: #CCC;
+  font-family: sans-serif;
+}
+
+p {
+  margin: 1rem;
+}
+
+.table {
+  width: 100%;
+}
+.table td {
+  border: 1px solid #CCC;
+}
+.table thead {
+  background: black;
+}
+
+.btn, .card-action, .btn-danger, .card-cancel {
+  border-radius: 3px;
+  padding: 5px 12px;
+}
+
+.btn, .card-action, .btn-danger, .card-cancel {
+  text-decoration: none;
+  background: #8383ff;
+  color: #fff;
+  margin: 0 1px 0 1px;
+}
+.btn:hover, .card-action:hover, .btn-danger:hover, .card-cancel:hover {
+  background: blue;
+}
+
+.btn-danger, .card-cancel {
+  background: #fc2c2c;
+}
+.btn-danger:hover, .card-cancel:hover {
+  background: #ff4f4f;
+}
+
+.card {
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+  padding: 10px;
+  border-radius: 3px;
+  background: #fff;
+  position: relative;
+}
+
+.card::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 10px solid #fff;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  bottom: -10px;
+  left: calc(50% - 10px);
+}
+
+.card-actions {
+  display: flex;
+}
+
+@media only screen and (min-width: 200px) {
+  .btn, .btn-danger, .card-action, .card-cancel {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

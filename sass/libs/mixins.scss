@@ -1,0 +1,14 @@
+@mixin rotate($rotation: 10deg) {
+    // -ms-transform: rotate($rotation);
+    // -webkit-transform: rotate($rotation);
+    // transform: rotate($rotation);
+    @include transform(rotate($rotation));
+}
+
+@mixin transform($transform) {
+    -ms-transform: $transform;
+    -webkit-transform: $transform;
+    -o-transform: $transform;
+    -o-transform: $transform;
+    transform: $transform;
+}
