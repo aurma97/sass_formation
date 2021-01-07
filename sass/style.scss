@@ -1,10 +1,15 @@
 $medium: 200px;
 @import 'libs/reset.scss';
+@import 'libs/functions.scss';
 @import 'libs/mixins.scss';
 @import 'libs/responsive.scss';
 
 $primary: 10px 10px;
 $padding: 20px;
+
+html, body {
+    font-size: 16px;
+}
 
 body {
     padding: $padding + 10px;
@@ -30,7 +35,7 @@ p {
 
 %btn {
     border-radius: 3px;
-    padding: 5px 12px;
+    padding: rem(5, 16) rem(12);
 }
 
 .btn {
@@ -67,19 +72,9 @@ p {
     // @include rotate(90deg);
     // @include transform(rotage(40deg))
     position: relative;
+    @include triangle($color: green, $size: 15px);
 }
 
-.card::after {
-    content: '';
-    width: 0;
-    height: 0;
-    border-top: 10px solid #fff;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    position: absolute;
-    bottom: -10px;
-    left: calc(50% - 10px);
-}
 
 .card-action {
     @extend .btn;

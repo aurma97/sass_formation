@@ -47,6 +47,10 @@ td:not([align]), th:not([align]) {
   text-align: left;
 }
 
+html, body {
+  font-size: 16px;
+}
+
 body {
   padding: 30px;
   background: #CCC;
@@ -69,7 +73,7 @@ p {
 
 .btn, .card-action, .btn-danger, .card-cancel {
   border-radius: 3px;
-  padding: 5px 12px;
+  padding: 0.3125 rem 0.75 rem;
 }
 
 .btn, .card-action, .btn-danger, .card-cancel {
@@ -99,17 +103,16 @@ p {
   background: #fff;
   position: relative;
 }
-
 .card::after {
   content: "";
   width: 0;
   height: 0;
-  border-top: 10px solid #fff;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
+  border-top: 15px solid green;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
   position: absolute;
-  bottom: -10px;
-  left: calc(50% - 10px);
+  bottom: -15px;
+  left: calc(50% - 15px);
 }
 
 .card-actions {
